@@ -1,0 +1,33 @@
+PROJECT: Student Grade Calculator
+
+TEST CASE 1:
+Input: 85,90,78
+Expected Output: Average 84.33, Grade B.
+
+TEST CASE 2:
+Input: 95,92,98
+Expected Output: Average 95.00, Grade A.
+
+TEST CASE 3:
+Input: 60,55,70
+Expected Output: Average 61.67, Grade C.
+
+TEST CASE 4:
+Input: 30,40,45
+Expected Output: Average 38.33, Grade F.
+
+TEST CASE 5:
+Input: 85,abc,78
+Expected Output: Numeric marks error message.
+
+TEST CASE 6:
+Input: 150,90,78
+Expected Output: Marks must be between 0 and 100.
+
+TEST CASE 7:
+Input: -10,90,78
+Expected Output: Marks must be between 0 and 100.
+
+TESTING OBJECTIVE:
+
+To verify the accuracy of grade calculations, input validation, and exception handling under different input conditions.

@@ -1,0 +1,71 @@
+PROJECT: Student Grade Calculator
+
+INTERNSHIP TASK: Week 2 – Debugging and Troubleshooting Python Applications
+
+1. TYPE ERROR
+
+Problem:
+The program attempted to add a string value to an integer while calculating the total marks.
+
+Error:
+TypeError: unsupported operand type(s) for +=: 'int' and 'str'
+
+Cause:
+The input() function returns string values. The program attempted to perform mathematical addition without converting the input into numbers.
+
+Solution:
+Converted the marks into floating-point numbers using float().
+
+2. INDENTATION ERROR
+
+Problem:
+The program contained inconsistent indentation inside the main() function and try-except block.
+
+Error:
+IndentationError: expected an indented block after 'try' statement.
+
+Cause:
+Python requires consistent indentation to identify code blocks.
+
+Solution:
+Corrected the indentation using four spaces for each nested code block.
+
+3. NAME ERROR
+
+Problem:
+The program could not locate the calculate_average() function.
+
+Error:
+NameError: name 'calculate_average' is not defined.
+
+Cause:
+The function definition was missing from the program after modifying the main() function.
+
+Solution:
+Restored the calculate_average() function before calling it.
+
+4. INPUT VALIDATION ERROR
+
+Problem:
+The application initially accepted invalid marks, including negative values and values above 100.
+
+Cause:
+There was no validation to check whether marks were within the permitted range.
+
+Solution:
+Implemented conditional validation using all() to ensure every mark is between 0 and 100.
+
+5. VALUE ERROR
+
+Problem:
+The application could crash when users entered alphabetic characters instead of numerical marks.
+
+Cause:
+Python cannot convert non-numeric strings into floating-point values.
+
+Solution:
+Implemented try-except exception handling to display an appropriate error message.
+
+CONCLUSION:
+
+The debugging process helped identify and resolve programming errors, improve input validation, and make the Student Grade Calculator more reliable.
